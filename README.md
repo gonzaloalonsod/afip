@@ -57,3 +57,32 @@ services:
     Gonzakpo\AfipBundle\Controller\AfipController: ~
 
 ```
+
+### Example use Afip in Controller
+```php
+<?php
+
+namespace App\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Routing\Annotation\Route;
+
+use Gonzakpo\AfipBundle\Controller\AfipController;
+
+class AppController extends AbstractController
+{
+    /**
+     * @Route("/app", name="app")
+     */
+    public function index(AfipController $afip)
+    {
+        $afip->createAfip(20111111112);
+        dump($afip);
+
+        return $this->render('app/index.html.twig', [
+            'controller_name' => 'AppController',
+        ]);
+    }
+}
+
+```
