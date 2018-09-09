@@ -11,8 +11,8 @@ class AfipController
 {
     private $afip;
 
-    public function __construct()
+    public function createAfip($cuit)
     {
-        $this->afip = new Afip(array('CUIT' => 20307919452));
+        $this->afip = new Afip(array('CUIT' => $cuit));
     }
 }
