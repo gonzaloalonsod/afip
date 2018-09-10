@@ -41,7 +41,7 @@ class AfipController
         }
     }
 
-    public function getWebService()
+    public function getWS()
     {
         return $this->afip;
     }

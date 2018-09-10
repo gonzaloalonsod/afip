@@ -82,7 +82,7 @@ class AppController extends AbstractController
      */
     public function index(AfipController $afip)
     {
-        dump($afip);
+        dump($afip->getWS());
 
         return $this->render('app/index.html.twig', [
             'controller_name' => 'AppController',
