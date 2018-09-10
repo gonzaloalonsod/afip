@@ -9,10 +9,40 @@ use Afip;
  */
 class AfipController
 {
+    private $afip_parameters;
     private $afip;
 
-    public function createAfip($cuit)
+    public function __construct($afip_parameters, $project_dir)
     {
-        $this->afip = new Afip(array('CUIT' => $cuit));
+        $this->parseParameters($afip_parameters, $project_dir);
+
+        if ($this->afip_parameters) {
+            $this->afip = new Afip($this->afip_parameters);
+        }
+    }
+
+    private function parseParameters($afip_parameters, $project_dir)
+    {
+        if ($afip_parameters['CUIT'] > 0) {
+            $afip_parameters['res_folder'] = $project_dir."/".$afip_parameters['res_folder'];
+        } else {
+            $afip_parameters = null;
+        }
+
+        $this->afip_parameters = $afip_parameters;
+    }
+
+    public function createAfip($afip_parameters)
+    {
+        $this->parseParameters($afip_parameters);
+
+        if ($this->afip_parameters) {
+            $this->afip = new Afip($this->afip_parameters);
+        }
+    }
+
+    public function getWebService()
+    {
+        return $this->afip;
     }
 }

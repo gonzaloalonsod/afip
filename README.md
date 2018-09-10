@@ -48,15 +48,21 @@ return [
 In the `config/packages/gonzakpo_afip.yaml` file of your project:
 
 ```yaml
-services:
-    _defaults:
-        public: false
-        autowire: true
-        autoconfigure: true
+afip:
+    parameters:
+        CUIT: 20111111112
+        production: false
+        res_folder: 'src/afip_res/'
+        cert: 'cert'
+        key: 'key'
+        passphrase: ''
 
-    Gonzakpo\AfipBundle\Controller\AfipController: ~
 
 ```
+
+### Step 4: Create res_folder
+
+Add files cert and key
 
 ### Example use Afip in Controller
 ```php
@@ -76,7 +82,6 @@ class AppController extends AbstractController
      */
     public function index(AfipController $afip)
     {
-        $afip->createAfip(20111111112);
         dump($afip);
 
         return $this->render('app/index.html.twig', [
