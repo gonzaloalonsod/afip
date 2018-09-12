@@ -10,7 +10,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('gonzakpo_afip');
+        $rootNode = $treeBuilder->root('afip_parameters');
 
         $rootNode
             ->children()

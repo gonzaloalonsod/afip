@@ -45,7 +45,7 @@ return [
 
 ### Step 3: Add file config
 
-In the `config/packages/gonzakpo_afip.yaml` file of your project:
+In the `config/packages/afip_parameters.yaml` file of your project:
 
 ```yaml
 afip:
