@@ -53,6 +53,7 @@ afip:
         CUIT: 20111111112
         production: false
         res_folder: 'src/afip_res/'
+        ta_folder: 'src/afip_res/'
         cert: 'cert'
         key: 'key'
         passphrase: ''

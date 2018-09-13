@@ -25,6 +25,7 @@ class AfipController
     {
         if ($afip_parameters['CUIT'] > 0) {
             $afip_parameters['res_folder'] = $project_dir."/".$afip_parameters['res_folder'];
+            $afip_parameters['ta_folder'] = $project_dir."/".$afip_parameters['ta_folder'];
         } else {
             $afip_parameters = null;
         }
