@@ -12,7 +12,7 @@
         }
     ],
     "require": {
-        "ivanalemunioz/afip.php": "^0.5.1"
+        "afipsdk/afip.php": "^0.5.3"
     },
     "config": {
         "sort-packages": true

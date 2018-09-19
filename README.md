@@ -94,7 +94,7 @@ class AppController extends AbstractController
 ```
 
 ## Dependencias
-- El bundle implementa [afip.php](https://github.com/ivanalemunioz/afip.php) .
+- El bundle implementa [afipsdk-afip.php](https://github.com/afipsdk/afip.php) .
 
 ## Author
 Gonzalo Alonso - gonkpo@gmail.com
