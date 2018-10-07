@@ -92,6 +92,17 @@ class AppController extends AbstractController
 }
 
 ```
+### Other Example use Afip dependency injection
+```php
+...
+use Gonzakpo\AfipBundle\Controller\AfipController;
+...
+    public function index()
+    {
+        $afip = $this->container->get(AfipController::class);
+    }
+...
+```
 
 ## Dependencias
 - El bundle implementa [afipsdk-afip.php](https://github.com/afipsdk/afip.php) .
