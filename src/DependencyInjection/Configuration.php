@@ -1,6 +1,6 @@
 <?php
 
-namespace Gonzakpo\AfipBundle\DependencyInjection;
+namespace Gonzaloalonsod\AfipBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -9,7 +9,7 @@ class Configuration implements ConfigurationInterface
 {
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
+        $treeBuilder = new TreeBuilder('afip');
         $rootNode = $treeBuilder->root('afip_parameters');
 
         $rootNode
