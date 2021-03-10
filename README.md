@@ -9,7 +9,7 @@ Applications that use Symfony Flex (Developing)
 Open a command console, enter your project directory and execute:
 
 ```console
-$ composer require gonzakpo/afip-bundle
+$ composer require gonzaloalonsod/afip-bundle
 ```
 
 Applications that don't use Symfony Flex
@@ -21,7 +21,7 @@ Open a command console, enter your project directory and execute the
 following command to download the latest stable version of this bundle:
 
 ```console
-$ composer require gonzakpo/afip-bundle
+$ composer require gonzaloalonsod/afip-bundle
 ```
 
 This command requires you to have Composer installed globally, as explained
@@ -38,7 +38,7 @@ in the `config/bundles.php` file of your project:
 
 return [
     // ...
-    Gonzakpo\AfipBundle\AfipBundle::class => ['all' => true],
+    Gonzaloalonsod\AfipBundle\AfipBundle::class => ['all' => true],
 ];
 
 ```
@@ -74,7 +74,7 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
-use Gonzakpo\AfipBundle\Controller\AfipController;
+use Gonzaloalonsod\AfipBundle\Controller\AfipController;
 
 class AppController extends AbstractController
 {
@@ -95,7 +95,7 @@ class AppController extends AbstractController
 ### Other Example use Afip dependency injection
 ```php
 ...
-use Gonzakpo\AfipBundle\Controller\AfipController;
+use Gonzaloalonsod\AfipBundle\Controller\AfipController;
 ...
     public function index()
     {
@@ -108,4 +108,4 @@ use Gonzakpo\AfipBundle\Controller\AfipController;
 - El bundle implementa [afipsdk-afip.php](https://github.com/afipsdk/afip.php) .
 
 ## Author
-Gonzalo Alonso - gonkpo@gmail.com
+Gonzalo Alonso - gonzaloalonsod@gmail.com
