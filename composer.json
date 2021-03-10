@@ -1,14 +1,14 @@
 {
-    "name": "gonzakpo/afip-bundle",
+    "name": "gonzaloalonsod/afip-bundle",
     "type": "symfony-bundle",
     "description": "Web Services de AFIP",
     "keywords": ["afip", "web", "services"],
-    "homepage": "https://github.com/gonzakpo/afip",
+    "homepage": "https://github.com/gonzaloalonsod/afip",
     "license": "MIT",
     "authors": [
         {
             "name": "Gonzalo Alonso",
-            "email": "gonkpo@gmail.com"
+            "email": "gonzaloalonsod@gmail.com"
         }
     ],
     "require": {
@@ -19,12 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Gonzakpo\\AfipBundle\\": "src/"
+            "Gonzaloalonsod\\AfipBundle\\": "src/"
         }
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0.x-dev"
+            "dev-master": "2.0.x-dev"
         }
     }
 }
