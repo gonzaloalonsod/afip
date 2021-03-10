@@ -1,11 +1,11 @@
 <?php
 
-namespace Gonzakpo\AfipBundle\Controller;
+namespace Gonzaloalonsod\AfipBundle\Controller;
 
 use Afip;
 
 /**
- * @author Gonzalo Alonso <gonkpo@gmail.com>
+ * @author Gonzalo Alonso <gonzaloalonsod@gmail.com>
  */
 class AfipController
 {
