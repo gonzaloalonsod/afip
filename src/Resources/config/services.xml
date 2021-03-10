@@ -6,7 +6,7 @@
     <services>
         <defaults autowire="true" autoconfigure="true" public="true" />
 
-        <service id="Gonzakpo\AfipBundle\Controller\AfipController">
+        <service id="Gonzaloalonsod\AfipBundle\Controller\AfipController">
             <argument key="$afip_parameters">%afip_parameters%</argument>
             <argument key="$project_dir">%kernel.project_dir%</argument>
         </service>
